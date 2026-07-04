@@ -5,26 +5,29 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CV RAI JAYA BERSAMA</title>
 <style>
-body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f5f7fa; color:#333;}
-header {background:linear-gradient(135deg, #0d47a1 0%, #b8860b 100%); color:white; text-align:center; padding:40px 15px;}
-.logo {width:120px; height:120px; margin-bottom:15px; background:white; border-radius:50%; padding:10px;}
-header h1 {margin:10px 0 5px; font-size:28px;}
-header p {margin:0; font-size:15px; opacity:0.9;}
-nav {background:#1565c0; text-align:center; padding:10px; position:sticky; top:0;}
-nav a {color:white; text-decoration:none; margin:0 10px; font-weight:bold;}
-.container {max-width:900px; margin:20px auto; padding:15px;}
-.card {background:white; padding:20px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,0.1); margin-bottom:20px;}
-h2 {color:#0d47a1; border-bottom:2px solid #b8860b; padding-bottom:5px;}
+* {margin:0; padding:0; box-sizing:border-box;}
+body {font-family: 'Segoe UI', Arial, sans-serif; background:#f5f7fa; color:#333; line-height:1.6;}
+header {background:linear-gradient(135deg, #0d47a1 0%, #b8860b 100%); color:white; text-align:center; padding:40px 20px;}
+.logo {width:130px; height:130px; border-radius:50%; background:white; padding:12px; margin-bottom:15px; object-fit:contain;}
+header h1 {font-size:28px; margin-bottom:8px;}
+header p {font-size:15px; opacity:0.95;}
+nav {background:#1565c0; text-align:center; padding:12px; position:sticky; top:0; z-index:10;}
+nav a {color:white; text-decoration:none; margin:0 12px; font-weight:bold; font-size:14px;}
+.container {max-width:900px; margin:25px auto; padding:15px;}
+.card {background:white; padding:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08); margin-bottom:20px;}
+h2 {color:#0d47a1; border-bottom:3px solid #b8860b; padding-bottom:8px; margin-bottom:15px;}
 .layanan {display:grid; grid-template-columns:1fr; gap:15px;}
-.item {background:#e3f2fd; padding:15px; border-radius:10px; border-left:5px solid #b8860b;}
-.btn-wa {display:inline-block; background:#25D366; color:white; padding:12px 20px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:10px;}
-footer {background:#0d47a1; color:white; text-align:center; padding:15px; margin-top:30px; font-size:14px;}
+.item {background:#e3f2fd; padding:18px; border-radius:10px; border-left:5px solid #b8860b;}
+.item h3 {color:#0d47a1; margin-bottom:8px;}
+.btn-wa {display:inline-block; background:#25D366; color:white; padding:14px 25px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:12px;}
+footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin-top:30px; font-size:14px;}
+@media(min-width:700px){ .layanan{grid-template-columns:1fr 1fr;} }
 </style>
 </head>
 <body>
 
 <header>
-  <img src="logo-rjb.png" alt="Logo RJB" class="logo"> RJB" class="logo">
+  <img src="logo-rjb.png" alt="Logo CV RAI JAYA BERSAMA" class="logo">
   <h1>CV RAI JAYA BERSAMA</h1>
   <p>Solusi Terpadu: Makan & Minum | Pengadaan | Instalasi Listrik | Lanskap</p>
 </header>
@@ -38,33 +41,46 @@ footer {background:#0d47a1; color:white; text-align:center; padding:15px; margin
 
 <div class="container">
   <div class="card" id="tentang">
-    <h2>Tentang CV Rai Jaya</h2>
-    <p>CV Rai Jaya adalah perusahaan yang bergerak di bidang penyediaan makanan & minuman, pengadaan barang/jasa, perawatan dan instalasi listrik, serta jasa penataan lanskap. Kami berkomitmen memberikan layanan profesional, tepat waktu, dan terpercaya untuk kebutuhan bisnis & proyek Anda.</p>
+    <h2>Tentang Kami</h2>
+    <p>CV Rai Jaya Bersama adalah perusahaan yang bergerak di bidang penyediaan makanan & minuman, pengadaan barang/jasa, perawatan dan instalasi listrik, serta jasa penataan lanskap. Kami berkomitmen memberikan layanan profesional, tepat waktu, dan terpercaya untuk kebutuhan bisnis & proyek Anda.</p>
   </div>
 
   <div class="card" id="layanan">
     <h2>Layanan Kami</h2>
     <div class="layanan">
-      <div class="item"><h3>1. Makan & Minum</h3><p>Penyediaan catering, konsumsi rapat, food truck, dan makanan untuk event.</p></div>
-      <div class="item"><h3>2. Pengadaan</h3><p>Pengadaan barang dan jasa umum, ATK, bahan makanan, alat listrik.</p></div>
-      <div class="item"><h3>3. Instalasi & Perawatan Listrik</h3><p>Pemasangan instalasi listrik gedung dan perawatan jaringan.</p></div>
-      <div class="item"><h3>4. Jasa Lanskap</h3><p>Penataan taman, perawatan lanskap kantor dan area publik.</p></div>
+      <div class="item">
+        <h3>🍽️ Makan & Minum</h3>
+        <p>Penyediaan catering, konsumsi rapat, food truck, dan makanan untuk event & proyek.</p>
+      </div>
+      <div class="item">
+        <h3>📦 Pengadaan Barang/Jasa</h3>
+        <p>Pengadaan ATK, bahan makanan, alat listrik, dan kebutuhan umum lainnya.</p>
+      </div>
+      <div class="item">
+        <h3>⚡ Instalasi & Perawatan Listrik</h3>
+        <p>Pemasangan instalasi listrik gedung, perawatan jaringan, dan perbaikan.</p>
+      </div>
+      <div class="item">
+        <h3>🌿 Jasa Lanskap</h3>
+        <p>Penataan taman, perawatan lanskap kantor, perumahan, dan area publik.</p>
+      </div>
     </div>
   </div>
 
   <div class="card" id="kbli">
     <h2>Kode KBLI Perusahaan</h2>
-    <p><b>KBLI 56102</b> - Aktivitas Penyediaan Makanan<br>
-    <b>KBLI 463</b> - Perdagangan Besar Makanan, Minuman<br>
+    <p><b>KBLI 56102</b> - Aktivitas Penyediaan Makanan Di Bangunan Tidak Tetap<br>
+    <b>KBLI 463</b> - Perdagangan Besar Makanan, Minuman, dan Tembakau<br>
     <b>KBLI 43211</b> - Instalasi Listrik<br>
-    <b>KBLI 81300</b> - Aktivitas Perawatan Lanskap</p>
+    <b>KBLI 81300</b> - Aktivitas Perawatan dan Pemeliharaan Lanskap</p>
   </div>
 
   <div class="card" id="kontak">
     <h2>Hubungi Kami</h2>
     <p>Siap bekerja sama untuk proyek Anda. Konsultasi gratis!</p>
     <a class="btn-wa" href="https://wa.me/62813 7775 3606" target="_blank">Chat WhatsApp Sekarang</a>
-    <p style="margin-top:15px;">Email: raijayabersama@gmail.com</p>
+    <p style="margin-top:15px;"><b>Email:</b> raijayabersama@gmail.com</p>
+    <p><b>Alamat:</b> Pekanbaru, Riau</p>
   </div>
 </div>
 
