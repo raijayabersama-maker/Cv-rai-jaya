@@ -13,15 +13,43 @@ header h1 {font-size:28px; margin-bottom:8px;}
 header p {font-size:15px; opacity:0.95;}
 nav {background:#1565c0; text-align:center; padding:12px; position:sticky; top:0; z-index:10;}
 nav a {color:white; text-decoration:none; margin:0 12px; font-weight:bold; font-size:14px;}
-.container {max-width:900px; margin:25px auto; padding:15px;}
+nav a:hover {text-decoration:underline;}
+.container {max-width:1000px; margin:25px auto; padding:15px;}
 .card {background:white; padding:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08); margin-bottom:20px;}
-h2 {color:#0d47a1; border-bottom:3px solid #b8860b; padding-bottom:8px; margin-bottom:15px;}
+h2 {color:#0d47a1; border-bottom:3px solid #b8860b; padding-bottom:8px; margin-bottom:15px; text-align:center;}
+.subtitle {text-align:center; color:#666; margin-bottom:25px;}
+
 .layanan {display:grid; grid-template-columns:1fr; gap:15px;}
 .item {background:#e3f2fd; padding:18px; border-radius:10px; border-left:5px solid #b8860b;}
 .item h3 {color:#0d47a1; margin-bottom:8px;}
-.btn-wa {display:inline-block; background:#25D366; color:white; padding:14px 25px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:12px;}
+
+/* KENAPA MEMILIH KAMI */
+.grid-4 {display:grid; grid-template-columns:1fr; gap:20px;}
+.kenapa-card {background:#fff; border:1px solid #e0e0e0; border-radius:12px; padding:22px; text-align:center; transition:0.3s;}
+.kenapa-card:hover {transform:translateY(-4px); box-shadow:0 6px 15px rgba(13,71,161,0.12);}
+.kenapa-icon {font-size:38px; margin-bottom:12px; color:#0d47a1;}
+.kenapa-card h3 {color:#0d47a1; font-size:17px; margin-bottom:8px;}
+
+/* LEGALITAS */
+.legal-box {background:#f5f9ff; border-radius:12px; padding:30px 20px; text-align:center;}
+.legal-grid {display:flex; flex-wrap:wrap; justify-content:center; gap:15px; margin-top:15px;}
+.legal-item {background:#fff; padding:12px 20px; border-radius:8px; border:1px solid #bbdefb; font-weight:600; color:#0d47a1; font-size:14px;}
+
+/* FAQ */
+.faq-item {background:#fff; border:1px solid #e0e0e0; border-radius:8px; margin-bottom:12px; overflow:hidden;}
+.faq-q {padding:16px 18px; font-weight:600; cursor:pointer; display:flex; justify-content:space-between; align-items:center; color:#0d47a1;}
+.faq-a {padding:0 18px 16px 18px; display:none; color:#555;}
+
+/* KONTAK */
+.kontak-center {text-align:center; max-width:600px; margin:auto;}
+.btn-wa {display:inline-block; background:#25D366; color:white; padding:14px 25px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:15px; transition:0.3s;}
+.btn-wa:hover {background:#1ebe5b; transform:translateY(-2px);}
+
 footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin-top:30px; font-size:14px;}
-@media(min-width:700px){ .layanan{grid-template-columns:1fr 1fr;} }
+@media(min-width:700px){ 
+  .layanan{grid-template-columns:1fr 1fr;} 
+  .grid-4{grid-template-columns:1fr 1fr 1fr 1fr;}
+}
 </style>
 </head>
 <body>
@@ -35,7 +63,10 @@ footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin
 <nav>
   <a href="#tentang">Tentang</a>
   <a href="#layanan">Layanan</a>
+  <a href="#kenapa">Keunggulan</a>
   <a href="#kbli">KBLI</a>
+  <a href="#legal">Legalitas</a>
+  <a href="#faq">FAQ</a>
   <a href="#kontak">Kontak</a>
 </nav>
 
@@ -67,6 +98,34 @@ footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin
     </div>
   </div>
 
+  <!-- 2. KENAPA MEMILIH KAMI -->
+  <div class="card" id="kenapa">
+    <h2>Kenapa Memilih Kami</h2>
+    <p class="subtitle">Mitra terpercaya untuk kebutuhan perusahaan dan instansi Anda</p>
+    <div class="grid-4">
+      <div class="kenapa-card">
+        <div class="kenapa-icon">📄</div>
+        <h3>Berpengalaman & Berlegalitas</h3>
+        <p>Berbadan hukum dengan KBLI lengkap. Siap mengikuti proses tender dan kerjasama B2B.</p>
+      </div>
+      <div class="kenapa-card">
+        <div class="kenapa-icon">⏱️</div>
+        <h3>Komitmen Tepat Waktu</h3>
+        <p>Setiap pekerjaan dan pengiriman kami upayakan selesai sesuai jadwal yang disepakati.</p>
+      </div>
+      <div class="kenapa-card">
+        <div class="kenapa-icon">💰</div>
+        <h3>Harga Kompetitif & Transparan</h3>
+        <p>Penawaran jelas tanpa biaya tersembunyi. Mudahkan perencanaan anggaran Anda.</p>
+      </div>
+      <div class="kenapa-card">
+        <div class="kenapa-icon">🤝</div>
+        <h3>Layanan Terintegrasi</h3>
+        <p>1 CV untuk semua: konsumsi, pengadaan, listrik, dan lanskap. Lebih efisien.</p>
+      </div>
+    </div>
+  </div>
+
   <div class="card" id="kbli">
     <h2>Kode KBLI Perusahaan</h2>
     <p><b>KBLI 56102</b> - Aktivitas Penyediaan Makanan Di Bangunan Tidak Tetap<br>
@@ -75,18 +134,78 @@ footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin
     <b>KBLI 81300</b> - Aktivitas Perawatan dan Pemeliharaan Lanskap</p>
   </div>
 
+  <!-- 3. LEGALITAS -->
+  <div class="card" id="legal">
+    <h2>Legalitas & Sertifikasi</h2>
+    <p class="subtitle">Bentuk komitmen kami terhadap profesionalitas dan kepercayaan</p>
+    <div class="legal-box">
+      <div class="legal-grid">
+        <div class="legal-item">NIB - Nomor Induk Berusaha</div>
+        <div class="legal-item">NPWP Perusahaan</div>
+        <div class="legal-item">SIUP & TDP</div>
+        <div class="legal-item">KBLI Lengkap</div>
+      </div>
+      <p style="margin-top:15px; font-size:13px; color:#666;">*Dokumen dapat kami lampirkan sesuai kebutuhan tender dan kerjasama*</p>
+    </div>
+  </div>
+
+  <!-- 4. FAQ -->
+  <div class="card" id="faq">
+    <h2>Pertanyaan yang Sering Diajukan</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q">Apakah CV RJB melayani di luar wilayah Pekanbaru? <span>+</span></div>
+        <div class="faq-a">Ya. Kami melayani wilayah Riau dan sekitarnya. Untuk pengerjaan di luar daerah, silakan hubungi kami untuk koordinasi lebih lanjut.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Bagaimana sistem pembayaran untuk proyek dan pengadaan? <span>+</span></div>
+        <div class="faq-a">Umumnya kami menerapkan sistem DP 50% di awal dan pelunasan 50% setelah pekerjaan selesai dan berita acara ditandatangani.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Berapa minimal pemesanan untuk layanan catering? <span>+</span></div>
+        <div class="faq-a">Minimal pemesanan catering adalah 30 pax. Untuk jumlah di bawah itu dapat dikonsultasikan terlebih dahulu.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">Apakah RJB dapat mengikuti proses tender pengadaan? <span>+</span></div>
+        <div class="faq-a">Bisa. Kelengkapan dokumen legalitas dan administrasi perusahaan kami siap untuk mengikuti proses tender pemerintah maupun swasta.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. HUBUNGI KAMI TANPA MAP -->
   <div class="card" id="kontak">
     <h2>Hubungi Kami</h2>
-    <p>Siap bekerja sama untuk proyek Anda. Konsultasi gratis!</p>
-    <a class="btn-wa" href="https://wa.me/62813 7775 3606" target="_blank">Chat WhatsApp Sekarang</a>
-    <p style="margin-top:15px;"><b>Email:</b> raijayabersama@gmail.com</p>
-    <p><b>Alamat:</b> Jln.H.Imam Munandar, Pekanbaru, Riau</p>
+    <p class="subtitle">Kami siap menjadi mitra Anda</p>
+    <div class="kontak-center">
+      <p><b>Alamat Kantor:</b><br>Jln. H. Imam Munandar, Kel. Air Putih, Kec. Tampan, Kota Pekanbaru</p>
+      <p><b>Email:</b><br>raijayabersama@gmail.com</p>
+      <p><b>WhatsApp:</b><br>0813-7775-3606</p>
+      <p><b>Jam Operasional:</b><br>Senin - Jumat, 08.00 - 17.00 WIB</p>
+      <a class="btn-wa" href="https://wa.me/6281377753606" target="_blank">Chat WhatsApp Sekarang</a>
+    </div>
   </div>
 </div>
 
 <footer>
   © 2026 CV RAI JAYA BERSAMA. All Rights Reserved.
 </footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(item => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('active');
+      let answer = item.nextElementSibling;
+      let icon = item.querySelector('span');
+      if(answer.style.display === "block"){
+        answer.style.display = "none";
+        icon.textContent = "+";
+      } else {
+        answer.style.display = "block";
+        icon.textContent = "−";
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
