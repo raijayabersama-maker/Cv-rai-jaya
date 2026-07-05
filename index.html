@@ -3,7 +3,36 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CV RAI JAYA BERSAMA</title>
+
+<!-- SEO -->
+<title>CV RAI JAYA BERSAMA - Jasa Catering, Pengadaan, Listrik & Lanskap Pekanbaru</title>
+<meta name="description" content="CV RAI JAYA BERSAMA melayani jasa catering, pengadaan barang/jasa, instalasi & perawatan listrik, serta jasa lanskap di Pekanbaru, Riau. Berlegalitas NIB, NPWP, SIUP. Siap tender. Hub 0813-7775-3606">
+<meta name="keywords" content="catering pekanbaru, pengadaan barang riau, jasa listrik, jasa lanskap, cv rjb, kontraktor pekanbaru">
+<meta name="author" content="CV RAI JAYA BERSAMA">
+
+<!-- Schema Google biar muncul info perusahaan -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CV RAI JAYA BERSAMA",
+  "url": "https://namadomainkamu.com",
+  "logo": "logo.rjb.png",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+62-813-7775-3606",
+    "contactType": "customer service",
+    "areaServed": "ID"
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Jln. H. Imam Munandar",
+    "addressLocality": "Pekanbaru",
+    "addressRegion": "Riau"
+  }
+}
+</script>
+
 <style>
 * {margin:0; padding:0; box-sizing:border-box;}
 body {font-family: 'Segoe UI', Arial, sans-serif; background:#f5f7fa; color:#333; line-height:1.6;}
@@ -12,12 +41,12 @@ header {background:linear-gradient(135deg, #0d47a1 0%, #b8860b 100%); color:whit
 header h1 {font-size:28px; margin-bottom:8px;}
 header p {font-size:15px; opacity:0.95;}
 nav {background:#1565c0; text-align:center; padding:12px; position:sticky; top:0; z-index:10;}
-nav a {color:white; text-decoration:none; margin:0 12px; font-weight:bold; font-size:14px;}
+nav a {color:white; text-decoration:none; margin:0 10px; font-weight:bold; font-size:14px;}
 nav a:hover {text-decoration:underline;}
 .container {max-width:1000px; margin:25px auto; padding:15px;}
 .card {background:white; padding:25px; border-radius:12px; box-shadow:0 3px 10px rgba(0,0,0,0.08); margin-bottom:20px;}
 h2 {color:#0d47a1; border-bottom:3px solid #b8860b; padding-bottom:8px; margin-bottom:15px; text-align:center;}
-.subtitle {text-align:center; color:#666; margin-bottom:25px;}
+.subtitle {text-align:center; color:#666; margin-bottom:25px; font-size:15px;}
 
 .layanan {display:grid; grid-template-columns:1fr; gap:15px;}
 .item {background:#e3f2fd; padding:18px; border-radius:10px; border-left:5px solid #b8860b;}
@@ -27,10 +56,10 @@ h2 {color:#0d47a1; border-bottom:3px solid #b8860b; padding-bottom:8px; margin-b
 .grid-4 {display:grid; grid-template-columns:1fr; gap:20px;}
 .kenapa-card {background:#fff; border:1px solid #e0e0e0; border-radius:12px; padding:22px; text-align:center; transition:0.3s;}
 .kenapa-card:hover {transform:translateY(-4px); box-shadow:0 6px 15px rgba(13,71,161,0.12);}
-.kenapa-icon {font-size:38px; margin-bottom:12px; color:#0d47a1;}
+.kenapa-icon {font-size:38px; margin-bottom:12px;}
 .kenapa-card h3 {color:#0d47a1; font-size:17px; margin-bottom:8px;}
 
-/* LEGALITAS */
+/* LEGALITAS & KBLI */
 .legal-box {background:#f5f9ff; border-radius:12px; padding:30px 20px; text-align:center;}
 .legal-grid {display:flex; flex-wrap:wrap; justify-content:center; gap:15px; margin-top:15px;}
 .legal-item {background:#fff; padding:12px 20px; border-radius:8px; border:1px solid #bbdefb; font-weight:600; color:#0d47a1; font-size:14px;}
@@ -45,7 +74,29 @@ h2 {color:#0d47a1; border-bottom:3px solid #b8860b; padding-bottom:8px; margin-b
 .btn-wa {display:inline-block; background:#25D366; color:white; padding:14px 25px; border-radius:8px; text-decoration:none; font-weight:bold; margin-top:15px; transition:0.3s;}
 .btn-wa:hover {background:#1ebe5b; transform:translateY(-2px);}
 
-footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin-top:30px; font-size:14px;}
+/* TOMBOL WA MENGAMBANG */
+.float-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 999;
+  transition: 0.3s;
+}
+.float-wa:hover {background: #1ebe5b; transform: scale(1.1);}
+
+footer {background:#0d47a1; color:white; text-align:center; padding:20px; margin-top:30px; font-size:14px;}
+footer a {color:#bbdefb; text-decoration:none;}
 @media(min-width:700px){ 
   .layanan{grid-template-columns:1fr 1fr;} 
   .grid-4{grid-template-columns:1fr 1fr 1fr 1fr;}
@@ -55,7 +106,7 @@ footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin
 <body>
 
 <header>
-  <img src="logo.rjb.png" alt="Logo CV RAI JAYA BERSAMA" class="logo">
+  <img src="logo.rjb.png" alt="Logo CV RAI JAYA BERSAMA Pekanbaru" class="logo">
   <h1>CV RAI JAYA BERSAMA</h1>
   <p>Solusi Terpadu: Makan & Minum | Pengadaan | Instalasi Listrik | Lanskap</p>
 </header>
@@ -73,68 +124,54 @@ footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin
 <div class="container">
   <div class="card" id="tentang">
     <h2>Tentang Kami</h2>
-    <p>CV Rai Jaya Bersama adalah perusahaan yang bergerak di bidang penyediaan makanan & minuman, pengadaan barang/jasa, perawatan dan instalasi listrik, serta jasa penataan lanskap. Kami berkomitmen memberikan layanan profesional, tepat waktu, dan terpercaya untuk kebutuhan bisnis & proyek Anda.</p>
+    <p>CV Rai Jaya Bersama adalah perusahaan di Pekanbaru yang bergerak di bidang penyediaan makanan & minuman, pengadaan barang/jasa, perawatan dan instalasi listrik, serta jasa penataan lanskap. Kami berkomitmen memberikan layanan profesional, tepat waktu, dan terpercaya untuk kebutuhan bisnis & proyek Anda.</p>
   </div>
 
   <div class="card" id="layanan">
-    <h2>Layanan Kami</h2>
+    <h2>Layanan Kami di Pekanbaru</h2>
     <div class="layanan">
       <div class="item">
-        <h3>🍽️ Makan & Minum</h3>
-        <p>Penyediaan catering, konsumsi rapat, food truck, dan makanan untuk event & proyek.</p>
+        <h3>🍽️ Makan & Minum / Catering</h3>
+        <p>Penyediaan catering, konsumsi rapat, food truck, dan makanan untuk event & proyek di wilayah Riau.</p>
       </div>
       <div class="item">
         <h3>📦 Pengadaan Barang/Jasa</h3>
-        <p>Pengadaan ATK, bahan makanan, alat listrik, dan kebutuhan umum lainnya.</p>
+        <p>Pengadaan ATK, bahan makanan, alat listrik, dan kebutuhan umum lainnya untuk perusahaan & instansi.</p>
       </div>
       <div class="item">
         <h3>⚡ Instalasi & Perawatan Listrik</h3>
-        <p>Pemasangan instalasi listrik gedung, perawatan jaringan, dan perbaikan.</p>
+        <p>Pemasangan instalasi listrik gedung, perawatan jaringan, dan perbaikan oleh teknisi berpengalaman.</p>
       </div>
       <div class="item">
         <h3>🌿 Jasa Lanskap</h3>
-        <p>Penataan taman, perawatan lanskap kantor, perumahan, dan area publik.</p>
+        <p>Penataan taman, perawatan lanskap kantor, perumahan, dan area publik dengan hasil rapi dan estetik.</p>
       </div>
     </div>
   </div>
 
-  <!-- 2. KENAPA MEMILIH KAMI -->
   <div class="card" id="kenapa">
-    <h2>Kenapa Memilih Kami</h2>
+    <h2>Kenapa Memilih CV RJB</h2>
     <p class="subtitle">Mitra terpercaya untuk kebutuhan perusahaan dan instansi Anda</p>
     <div class="grid-4">
-      <div class="kenapa-card">
-        <div class="kenapa-icon">📄</div>
-        <h3>Berpengalaman & Berlegalitas</h3>
-        <p>Berbadan hukum dengan KBLI lengkap. Siap mengikuti proses tender dan kerjasama B2B.</p>
-      </div>
-      <div class="kenapa-card">
-        <div class="kenapa-icon">⏱️</div>
-        <h3>Komitmen Tepat Waktu</h3>
-        <p>Setiap pekerjaan dan pengiriman kami upayakan selesai sesuai jadwal yang disepakati.</p>
-      </div>
-      <div class="kenapa-card">
-        <div class="kenapa-icon">💰</div>
-        <h3>Harga Kompetitif & Transparan</h3>
-        <p>Penawaran jelas tanpa biaya tersembunyi. Mudahkan perencanaan anggaran Anda.</p>
-      </div>
-      <div class="kenapa-card">
-        <div class="kenapa-icon">🤝</div>
-        <h3>Layanan Terintegrasi</h3>
-        <p>1 CV untuk semua: konsumsi, pengadaan, listrik, dan lanskap. Lebih efisien.</p>
-      </div>
+      <div class="kenapa-card"><div class="kenapa-icon">📄</div><h3>Berpengalaman & Berlegalitas</h3><p>Berbadan hukum dengan KBLI lengkap. Siap mengikuti proses tender dan kerjasama B2B.</p></div>
+      <div class="kenapa-card"><div class="kenapa-icon">⏱️</div><h3>Komitmen Tepat Waktu</h3><p>Setiap pekerjaan dan pengiriman kami upayakan selesai sesuai jadwal yang disepakati.</p></div>
+      <div class="kenapa-card"><div class="kenapa-icon">💰</div><h3>Harga Kompetitif & Transparan</h3><p>Penawaran jelas tanpa biaya tersembunyi. Mudahkan perencanaan anggaran Anda.</p></div>
+      <div class="kenapa-card"><div class="kenapa-icon">🤝</div><h3>Layanan Terintegrasi</h3><p>1 CV untuk semua: konsumsi, pengadaan, listrik, dan lanskap. Lebih efisien.</p></div>
     </div>
   </div>
 
   <div class="card" id="kbli">
     <h2>Kode KBLI Perusahaan</h2>
-    <p><b>KBLI 56102</b> - Aktivitas Penyediaan Makanan Di Bangunan Tidak Tetap<br>
-    <b>KBLI 463</b> - Perdagangan Besar Makanan, Minuman, dan Tembakau<br>
-    <b>KBLI 43211</b> - Instalasi Listrik<br>
-    <b>KBLI 81300</b> - Aktivitas Perawatan dan Pemeliharaan Lanskap</p>
+    <div class="legal-box">
+      <div class="legal-grid">
+        <div class="legal-item"><b>KBLI 56102</b><br>Penyediaan Makanan</div>
+        <div class="legal-item"><b>KBLI 463</b><br>Perdagangan Besar Makanan</div>
+        <div class="legal-item"><b>KBLI 43211</b><br>Instalasi Listrik</div>
+        <div class="legal-item"><b>KBLI 81300</b><br>Perawatan Lanskap</div>
+      </div>
+    </div>
   </div>
 
-  <!-- 3. LEGALITAS -->
   <div class="card" id="legal">
     <h2>Legalitas & Sertifikasi</h2>
     <p class="subtitle">Bentuk komitmen kami terhadap profesionalitas dan kepercayaan</p>
@@ -148,51 +185,44 @@ footer {background:#0d47a1; color:white; text-align:center; padding:18px; margin
     </div>
   </div>
 
-  <!-- 4. FAQ -->
   <div class="card" id="faq">
     <h2>Pertanyaan yang Sering Diajukan</h2>
     <div class="faq">
-      <div class="faq-item">
-        <div class="faq-q">Apakah CV RJB melayani di luar wilayah Pekanbaru? <span>+</span></div>
-        <div class="faq-a">Ya. Kami melayani wilayah Riau dan sekitarnya. Untuk pengerjaan di luar daerah, silakan hubungi kami untuk koordinasi lebih lanjut.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Bagaimana sistem pembayaran untuk proyek dan pengadaan? <span>+</span></div>
-        <div class="faq-a">Umumnya kami menerapkan sistem DP 50% di awal dan pelunasan 50% setelah pekerjaan selesai dan berita acara ditandatangani.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Berapa minimal pemesanan untuk layanan catering? <span>+</span></div>
-        <div class="faq-a">Minimal pemesanan catering adalah 30 pax. Untuk jumlah di bawah itu dapat dikonsultasikan terlebih dahulu.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">Apakah RJB dapat mengikuti proses tender pengadaan? <span>+</span></div>
-        <div class="faq-a">Bisa. Kelengkapan dokumen legalitas dan administrasi perusahaan kami siap untuk mengikuti proses tender pemerintah maupun swasta.</div>
-      </div>
+      <div class="faq-item"><div class="faq-q">Apakah CV RJB melayani di luar wilayah Pekanbaru? <span>+</span></div><div class="faq-a">Ya. Kami melayani wilayah Riau dan sekitarnya. Untuk pengerjaan di luar daerah, silakan hubungi kami.</div></div>
+      <div class="faq-item"><div class="faq-q">Bagaimana sistem pembayaran untuk proyek? <span>+</span></div><div class="faq-a">Umumnya DP 50% di awal dan pelunasan 50% setelah pekerjaan selesai dan BA ditandatangani.</div></div>
+      <div class="faq-item"><div class="faq-q">Berapa minimal pemesanan catering? <span>+</span></div><div class="faq-a">Minimal pemesanan catering adalah 30 pax. Untuk jumlah di bawah itu bisa dikonsultasikan.</div></div>
+      <div class="faq-item"><div class="faq-q">Apakah RJB dapat mengikuti tender? <span>+</span></div><div class="faq-a">Bisa. Dokumen legalitas kami lengkap dan siap untuk tender pemerintah maupun swasta.</div></div>
     </div>
   </div>
 
-  <!-- 5. HUBUNGI KAMI TANPA MAP -->
   <div class="card" id="kontak">
     <h2>Hubungi Kami</h2>
     <p class="subtitle">Kami siap menjadi mitra Anda</p>
     <div class="kontak-center">
-      <p><b>Alamat Kantor:</b><br>Jln. H. Imam Munandar, Kel. Tangkerang Timur, Kec. Tenayan Raya, Kota Pekanbaru</p>
+      <p><b>Alamat Kantor:</b><br>Jln. H. Imam Munandar, Kel. Tangkerang Timur, Kec. Tenayan Raya, Kota Pekanbaru, Riau</p>
       <p><b>Email:</b><br>raijayabersama@gmail.com</p>
       <p><b>WhatsApp:</b><br>0813-7775-3606</p>
-      <p><b>Jam Operasional:</b><br>Senin - Jumat, 08.00 - 17.00 WIB</p>
+      <p><b>Jam Operasional:</b><br>Senin - Sabtu, 08.00 - 17.00 WIB</p>
       <a class="btn-wa" href="https://wa.me/6281377753606" target="_blank">Chat WhatsApp Sekarang</a>
     </div>
   </div>
 </div>
 
 <footer>
-  © 2026 CV RAI JAYA BERSAMA. All Rights Reserved.
+  <p>© 2026 CV RAI JAYA BERSAMA. All Rights Reserved.</p>
+  <p style="margin-top:8px;">
+    <a href="mailto:raijayabersama@gmail.com">Email</a> | 
+    <a href="https://wa.me/6281377753606" target="_blank">WhatsApp</a> | 
+    Pekanbaru, Riau
+  </p>
 </footer>
+
+<!-- TOMBOL WA MENGAMBANG -->
+<a href="https://wa.me/6281377753606" target="_blank" class="float-wa">💬</a>
 
 <script>
   document.querySelectorAll('.faq-q').forEach(item => {
     item.addEventListener('click', () => {
-      item.classList.toggle('active');
       let answer = item.nextElementSibling;
       let icon = item.querySelector('span');
       if(answer.style.display === "block"){
